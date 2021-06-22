@@ -8,6 +8,55 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <h1>The Codebreaker Game</h1>
+    <div class="description">
+      <h2>Description</h2>
+      <p>
+        The game is quite simple.<br />You have to solve the hidden color code
+        behind the gray fields.<br />You have to fill the empty (white) solution
+        fields with colors. Click in the colorpicker on the desired color and
+        then on the desired empty field.<br />The colors can be placed at any
+        position and can be used multiple times. You can change the color at any
+        time.<br />Once you are done, you can use the Solve button to check if
+        your answer is correct.<br />You will get as a little help how many
+        fields you got right, but not which ones.<br />How many tries will you
+        need?<br />PS: There are no empty (white) fields!
+      </p>
+    </div>
+    <div class="game">
+      <p>Hidden code - will you be able to solve it?</p>
+      <div id="enigma" class="fieldset">
+        <div id="enigma1" class="field hidden"></div>
+        <div id="enigma2" class="field hidden"></div>
+        <div id="enigma3" class="field hidden"></div>
+        <div id="enigma4" class="field hidden"></div>
+        <div id="enigma5" class="field hidden"></div>
+      </div>
+      <p>Your tip:</p>
+      <div id="guess" class="fieldset">
+        <div id="guess1" class="field"></div>
+        <div id="guess2" class="field"></div>
+        <div id="guess3" class="field"></div>
+        <div id="guess4" class="field"></div>
+        <div id="guess5" class="field"></div>
+      </div>
+      <p>Pick your color:</p>
+      <div id="colorpicker" class="fieldset">
+        <div id="bluePin" class="field blue"></div>
+        <div id="greenPin" class="field green"></div>
+        <div id="redPin" class="field red"></div>
+        <div id="yellowPin" class="field yellow"></div>
+        <div id="blackPin" class="field black"></div>
+      </div>
+      <button id="solveButton">Solve</button>
+      <button id="startButton">Start/Restart</button>
+      <p>Number of right colors: <span id="right">0</span></p>
+      <p>Your attempts: <span id="attempts">0</span></p>
+    </div>
+    <p id="winner" class="invisible">
+      You have won!!!<br />Want another game? Just click the Start/Restart
+      button!
+    </p>
     <script src="./index.js"></script>
   </body>
 </html>
