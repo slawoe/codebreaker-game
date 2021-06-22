@@ -1,1 +1,120 @@
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("./assets/PressStart2P-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bangers";
+  src: url("./assets/Bangers-Regular.ttf") format("truetype");
+}
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Bangers";
+  letter-spacing: 0.1rem;
+}
+body {
+  background: rgb(239, 236, 236);
+  margin: 0 5rem;
+  max-width: 100vw;
+}
+h1 {
+  font-size: 3rem;
+  padding: 3rem 0;
+}
+h2 {
+  padding-bottom: 1.5rem;
+}
+p {
+  line-height: 2;
+}
+button {
+  font-family: "Press Start 2P";
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  box-shadow: grey 5px 5px;
+}
+#winner {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(181, 68, 68);
+  animation: buzz 0.15s infinite;
+}
+.description {
+  margin-bottom: 3rem;
+}
+.game {
+  border: 3px solid black;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: grey 5px 5px;
+}
+.game p {
+  padding: 0.75rem 0;
+  font-size: 1.5rem;
+}
+.fieldset {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+.field {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0 0.5rem;
+  box-shadow: rgb(191, 191, 191) 2px 2px;
+}
+.blue,
+.x4 {
+  background-color: rgb(36, 166, 247);
+}
+.green,
+.y9 {
+  background-color: rgb(31, 167, 160);
+}
+.red,
+.c27 {
+  background-color: rgb(196, 34, 77);
+}
+.yellow,
+.l11 {
+  background-color: rgb(235, 221, 114);
+}
+.black,
+.k98 {
+  background-color: black;
+}
 
+.invisible {
+  display: none;
+}
+
+.hidden {
+  background-color: grey;
+}
+:disabled {
+  opacity: 0.1;
+}
+@keyframes buzz {
+  0%,
+  100% {
+    transform: rotate(0.75deg);
+  }
+  50% {
+    transform: rotate(-0.75deg);
+  }
+}
